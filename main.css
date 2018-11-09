@@ -34,23 +34,27 @@ img {
 .centered-text     { text-align: center; }
 .right-text        { text-align: right; }
 
-.rotate {
+.rotated-text-to-left {
+  height: 100%;
+  width: 100%;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+  /* IE */
+  -ms-transform: rotate(-180deg);
+  /* Opera */
+  -o-transform: rotate(-180deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
 
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
+.rotated-text-to-right {
+  height: 100%;
+  width: 100%;
+  writing-mode: vertical-lr;
 }
 
 .no-padding { padding: 0; }
@@ -60,6 +64,14 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .padded-5 { padding: 5%; }
 
 .padded-top-1 { padding-top: 1%;}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
 
 .centered-container {
   margin-left: auto;
@@ -95,12 +107,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-size: cover;
   background: rgb(26, 188, 156);
+  color: white;
 }
 
-section {
+header, section, footer {
   min-height:100vh;
-  border: 1px solid rgb(200,200,200);
-  padding: 10vh 5%;
 }
 
 h1, h2, h3, h4 {
@@ -110,7 +121,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: 5vw;
   line-height: 0.9em;
 }
 
@@ -198,6 +209,32 @@ button {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
+}
+
+.project-box {
+  background-image: url("https://unsplash.it/300");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  min-height: 200px;
+}
+
+.project-overlay {
+  /* height: 100%;
+  width: 100%;
+  padding: 20%;
+  text-align: center; */
+  opacity: 0;
+  background-color: rgba(60,60,65,0.5);
+  transition: all 0.5s;
+}
+
+.project-overlay:hover {
+  opacity:1;
+}
+
+.project-overlay:hover p {
+  color: red;
 }
 
 /*------------ ABOUT ME --------------------------- */
