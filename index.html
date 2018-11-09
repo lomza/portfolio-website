@@ -26,14 +26,14 @@
   </head>
   <body>
     <div>
-      <a href="#projects"><i class="fas fa-angle-up"></i></a>
+      <a href="#about-me" class="navigate-top fixed"><i class="fas fa-angle-up"></i></a>
     </div>
 
     <!----------------- ABOUT ME ----------------->
     <header id="about-me">
       <!-- this is the fixed header that stays pinned to the top -->
       <nav>
-        <a href=#about-me>ABOUT</a>
+
         <a href=#projects>PROJECTS</a>
         <a href=#technology>TECH</a>
         <a href=#publications>PUBLICATIONS</a>
@@ -290,12 +290,16 @@
             <div class="col-6_sm-12 contact-form-box">
               <form action="https://formspree.io/your@email.com" method="POST"> <!-- TODO: make the form work! -->
                 <label for="name">Your Name</label>
-                <input id="name" class="text-color-3" type="text" name="name">
+                <input id="name" type="text" name="name">
                 <label for="mail">Your Email</label>
-                <input id="mail"class="text-color-3" type="email" name="_replyto">
+                <input id="mail" type="email" name="_replyto">
                 <label for="mail-content">Message</label>
-                <textarea id="mail-content" class="text-color-3" name="message"></textarea>
-                <input class="button" type="submit" value="Send">
+                <textarea id="mail-content" class="notes" name="message"></textarea>
+                <div class="flex-right">
+                  <div class="button">
+                    <input type="submit" value=" Send ">
+                  </div>
+                </div>
               </form>
             </div>
           </div>

@@ -65,12 +65,25 @@ img {
 
 .padded-top-1 { padding-top: 1%;}
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
 
 .absolute {
   position: absolute;
+}
+
+.navigate-top {
+  right: 0;
+  bottom: 0;
+  padding: 1%;
+  margin: 1%;
+  background-color: yellow;
+  border-radius: 50%;
 }
 
 .centered-container {
@@ -92,6 +105,16 @@ img {
 }
 
 /* ----- UNIVERSAL STYLES --------------------------- */
+nav {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
 .bg-featured {
   background-color: #26de81;
   color: white;
@@ -115,7 +138,6 @@ header, section, footer {
 }
 
 h1, h2, h3, h4 {
-  text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
@@ -133,8 +155,11 @@ h3 {
   font-size: 1.5em;
 }
 
+header, section, footer h1 {
+  text-transform: uppercase;
+}
+
 p {
-	font-size: 12px;
 	font-weight: light;
 	color: #333333;
 }
@@ -150,12 +175,12 @@ span a {
 	}
 }
 
-button {
+/* button {
   border: 1px solid red;
-}
+} */
 
 .col, [class*=col-] {
-  padding: 3%;
+  padding: 2%;
 }
 
 .fa {
@@ -201,10 +226,10 @@ button {
 
 .about-me-content {
 	max-width: 40vw;
-	padding: 1rem 2rem;
+	/* padding: 1rem 2rem; */
 }
 
-/*------------ ABOUT ME --------------------------- */
+/*------------ PROJECTS --------------------------- */
 #projects {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
@@ -237,30 +262,88 @@ button {
   color: red;
 }
 
-/*------------ ABOUT ME --------------------------- */
+/*------------ TECH --------------------------- */
 #technology {
 	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
 }
 
-/*------------ ABOUT ME --------------------------- */
+/*------------ PUBLICATIONS --------------------------- */
 #publications {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 }
 
-/*------------ ABOUT ME --------------------------- */
+/*------------ TALKS & WORKSHOPS --------------------------- */
 #talks_and_workshops {
 	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
 }
 
-/*------------ ABOUT ME --------------------------- */
+/*------------ CONTACT ME --------------------------- */
 #contact-me {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
+}
+
+form input,
+form textarea {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  outline-style: none;
+  background-color: transparent;
+
+  color: yellow;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid yellow 1px;
+  padding: 3px 10px;
+}
+
+[type="submit"] {
+  border: none;
+}
+
+form textarea {
+  border-bottom: none;
+  height: 12rem;
+  padding: 3px;
+  resize: none;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  border: none;
+  border-bottom: 2px solid yellow;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.button:after {
+  content: '';
+  border-top: 2px solid yellow;
+  display: block;
+  width: 100%;
+}
+
+.notes {
+    background-attachment: local;
+    background-image:
+    repeating-linear-gradient(transparent, transparent 30px, yellow 30px, yellow 31px, transparent 31px);
+    line-height: 31px;
 }
