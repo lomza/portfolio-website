@@ -22,6 +22,11 @@ Website Colours: #26de81 (default bg color),
   /* border: 1px solid green; */
 }
 
+body,
+html {
+  min-height: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -33,6 +38,11 @@ img {
 .left-text         { text-align: left; }
 .centered-text     { text-align: center; }
 .right-text        { text-align: right; }
+
+.centered-block {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .rotated-text-to-left {
   height: 100%;
@@ -93,6 +103,10 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
 }
 
 .mob-show { display: none;}
@@ -151,9 +165,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 2rem;
   line-height: 0.9em;
   color: yellow;
+  margin: 1rem 0 0 0;
 }
 
 h2 {
@@ -169,20 +184,17 @@ header h2, section h2, footer h2 {
   text-transform: uppercase;
 }
 
-span a {
+header span a {
   color: #fc5c65;
   text-decoration: none;
 	font-size: 18px;
 	margin: 0 10px;
 	transition: all 0.4s ease-in-out;
-	&:hover {
-		color: #ffffff;
-	}
 }
 
 /* unvisited link */
 a:link {
-    color: yellow;
+    color: #fc5c65;
 }
 
 /* visited link */
@@ -192,7 +204,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: hotpink;
+    color: yellow;
 }
 
 /* selected link */
@@ -251,8 +263,13 @@ a:active {
 }
 
 .about-me-content {
-	max-width: 40vw;
+	padding-left: 35%;
+  padding-right: 35%;
 	/* padding: 1rem 2rem; */
+}
+
+.about-me-desc {
+
 }
 
 /*------------ PROJECTS --------------------------- */
