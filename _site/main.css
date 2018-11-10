@@ -19,7 +19,7 @@ Website Colours: #26de81 (default bg color),
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 img {
@@ -116,6 +116,12 @@ nav a {
   font-size: 1.4rem;
 }
 
+nav h3 {
+  display: inline;
+  font-weight: 400;
+  color: yellow;
+}
+
 .bg-featured {
   background-color: #26de81;
   color: white;
@@ -136,6 +142,7 @@ body {
 
 header, section, footer {
   min-height:100vh;
+  padding: 1%;
 }
 
 h1, h2, h3, h4 {
@@ -146,9 +153,11 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2vw;
   line-height: 0.9em;
+  color: yellow;
 }
 
 h2 {
+  color: yellow;
   font-size: 4rem;
 }
 
@@ -264,12 +273,12 @@ a:active {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: rgba(60,60,65);
+  background-color: rgba(26, 188, 156, 0.85);
   transition: all 0.5s;
 }
 
 .project-overlay:hover {
-  opacity:0.7;
+  opacity:1;
 }
 
 .project-box-bg {
@@ -277,6 +286,7 @@ a:active {
   min-height: 240px;
   background-size: cover;
   background-position: center;
+  border: 5px solid hotpink;
 }
 
 /*------------ TECH --------------------------- */
@@ -287,25 +297,25 @@ a:active {
 }
 
 /*------------ PUBLICATIONS --------------------------- */
-#publications {
+#talks_and_workshops {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 }
 
-.img-publication {
-  height: 200px;
+.img-talks_work {
+  height: 160px;
 }
 
 /*------------ TALKS & WORKSHOPS --------------------------- */
-#talks_and_workshops {
+#publications {
 	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
 }
 
-.img-talks_work {
-  height: 160px;
+.img-publication {
+  height: 200px;
 }
 
 /*------------ CONTACT ME --------------------------- */
