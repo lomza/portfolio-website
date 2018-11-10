@@ -118,7 +118,6 @@ nav a {
 
 nav h3 {
   display: inline;
-  font-weight: 400;
   color: yellow;
 }
 
@@ -138,6 +137,7 @@ body {
   background-size: cover;
   background: rgb(26, 188, 156);
   color: white;
+  font-weight: 500;
 }
 
 header, section, footer {
@@ -262,6 +262,18 @@ a:active {
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 }
 
+#projects a {
+  color: yellow;
+}
+
+#projects p {
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+}
+
 .project-box {
   background-size: cover;
   background-position: center;
@@ -344,6 +356,10 @@ form textarea {
   border-right: none;
   border-bottom: solid yellow 1px;
   padding: 3px 10px;
+}
+
+label {
+  font-weight: 600;
 }
 
 [type="submit"] {
