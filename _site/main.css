@@ -22,9 +22,13 @@ Website Colours: #26de81 (default bg color),
   /* border: 1px solid green; */
 }
 
-body,
 html {
   min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  background: rgb(26, 188, 156);
+  color: white;
+  font-weight: 500;
 }
 
 img {
@@ -89,16 +93,6 @@ img {
   border-radius: 50%;
 }
 
-.navigate-top {
-  right: 0;
-  bottom: 0;
-  padding: 1%;
-  margin: 1%;
-  background-color: yellow;
-  border-radius: 50%;
-  z-index: 9;
-}
-
 .centered-container {
   margin-left: auto;
   margin-right: auto;
@@ -106,10 +100,6 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
-
-  /* position: relative;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 
 .mobile-show {
@@ -127,6 +117,17 @@ img {
 }
 
 /* ----- UNIVERSAL STYLES --------------------------- */
+
+.navigate-top {
+  right: 0;
+  bottom: 0;
+  padding: 1%;
+  margin: 1%;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 9;
+}
+
 nav {
   position: absolute;
   top: 1rem;
@@ -153,14 +154,6 @@ nav h3 {
 .featured h2,
 .featured h3 {
   color: white;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-size: cover;
-  background: rgb(26, 188, 156);
-  color: white;
-  font-weight: 500;
 }
 
 header, section, footer {
@@ -411,10 +404,6 @@ a:active {
   }
 }
 
-.about-me-desc {
-
-}
-
 /*------------ PROJECTS --------------------------- */
 #projects {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
@@ -593,7 +582,7 @@ form textarea {
   width: 100%;
 }
 
-.notes {
+.form-message {
     background-attachment: local;
     background-image:
     repeating-linear-gradient(transparent, transparent 30px, yellow 30px, yellow 31px, transparent 31px);
