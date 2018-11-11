@@ -183,6 +183,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+header nav h3 {
+  font-size: 1.4rem;
+}
+
 .grid, .grid-middle {
   padding: 2%;
 }
@@ -499,7 +503,6 @@ nav a {
 
 .publications-box {
   padding: 2rem;
-
 }
 
 .publications-box p {
@@ -561,6 +564,11 @@ form textarea {
   height: 12rem;
   padding: 3px;
   resize: none;
+}
+
+.contact-text {
+  padding-left: 1%;
+  padding-right: 1%
 }
 
 .flex-right {
