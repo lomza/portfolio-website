@@ -35,16 +35,33 @@
     <header class="grid-middle" id="about-me">
       <!-- this is the fixed header that stays pinned to the top -->
       <div class="col-12">
-        <nav>
+        <nav class="mobile-hide">
           <a href="#projects">Projects</a>
           <h3> | </h3>
-          <a href="#technology">Tech</a>
+          <a href="#technology">Technology</a>
           <h3> | </h3>
           <a href="#talks_and_workshops">Talks & Workshops</a>
           <h3> | </h3>
           <a href="#publications">Publications</a>
           <h3> | </h3>
           <a href="#contact-me">Contact</a>
+        </nav>
+
+        <nav class="mobile-show">
+          <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+          </div>
+          <div class="burger-menu">
+            <div class="burger-menu-content">
+              <a href="#projects">Projects</a>
+              <a href="#technology">Technology</a>
+              <a href="#talks_and_workshops">Talks & Workshops</a>
+              <a href="#publications">Publications</a>
+              <a href="#contact-me">Contact</a>
+            </div>
+          </div>
         </nav>
       </div>
 
@@ -56,7 +73,7 @@
         </div>
         <h1>Tonia Tkachuk</h1>
         <h4 class="padded-1">Apps & Web Developer</h4>
-        <p class="padded-1 about-me-content">I use the latest technologies to create mobile apps and websites. I find each project to be unique and enjoy making useful stuff work.</p>
+        <p class="about-me-content">I use the latest technologies to create mobile apps and websites. I find each project to be unique and enjoy making useful stuff work. Whenever I have some free time, I enjoy reading or playing with my son. </p>
         <p class="padded-3">
           <span><a href="mailto:tonia.tkachuk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></span>
           <span><a href="https://github.com/lomza" target="_blank"><i class="fab fa-github"></i></a></span>
@@ -82,8 +99,7 @@
         </div>
 
         <div class="col-10">
-          <div class="grid-spaceAround">
-
+          <div class="grid">
             <div class="col-4_sm-6_xs-12 project-box relative">
               <div class="project-box-bg" style="background-image:url(img/look_counter_project.png);">
                 <div class="project-overlay padded-3">
@@ -165,7 +181,7 @@
         </div>
       </div>
 
-      <div class="col-12 centered-text">
+      <div class="col-12-bottom centered-text">
         <a href="#technology">
           <i class="fas fa-angle-down"></i>
         </a>
@@ -187,11 +203,11 @@
           <h3>Flutter</h3>
         </div>
         <div class="col-2">
-          <h2 class="rotated-text-to-right">Tech</h2>
+          <h2 class="rotated-text-to-right">Technology</h2>
         </div>
       </div>
 
-      <div class="col-12 centered-text">
+      <div class="col-12-bottom centered-text">
         <a href="#talks_and_workshops">
           <i class="fas fa-angle-down"></i>
         </a>
@@ -202,16 +218,16 @@
       <div class="grid-middle">
 
         <div class="col-2">
-          <h2 class="rotated-text-to-left">& Talks Workshop</h2>
+          <h2 class="rotated-text-to-left">& Talks Workshops</h2>
         </div>
 
         <div class="col-10">
-          <div class="grid">
-            <div class="col-4_sm-6_xs-12">
+          <div class="grid-middle">
+            <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/support_library_talk.png" class="centered-container img-talks_work">
+                <img src="img/support_library_talk.png" class="centered-container img-talks_work round-img">
                 <a href="https://www.youtube.com/watch?v=YkvyBljxEWA" target="_blank">
-                  <h3>Android Support Library</h3>
+                  <h3>Android Support Lib</h3>
                 </a>
                 <p>
                   This is the talk that I gave at <a href="https://www.meetup.com/en-AU/Mobile-Warsaw/events/231840533/" target="_blank">Mobile Warsaw #38</a> meetup. I talked about the usage of Android Support libraries, tips and tricks, as well as my predictios of what to expect next in Android development.
@@ -219,9 +235,9 @@
               </div>
             </div>
 
-            <div class="col-4_sm-6_xs-12">
+            <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/vr_sdk.png" class="centered-container img-talks_work">
+                <img src="img/vr_sdk.png" class="centered-container img-talks_work round-img">
                 <a href="" target="_blank">
                   <h3 onclick="return false;">Android Workshops</h3>
                 </a>
@@ -231,9 +247,9 @@
               </div>
             </div>
 
-            <div class="col-4_sm-6_xs-12">
+            <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/grandle_for_android.png" class="centered-container img-talks_work">
+                <img src="img/grandle_for_android.png" class="centered-container img-talks_work round-img">
                 <a href="" target="_blank">
                   <h3 onclick="return false;">Gradle in Android</h3>
                 </a>
@@ -246,7 +262,7 @@
         </div>
       </div>
 
-      <div class="col-12 centered-text">
+      <div class="col-12-bottom centered-text">
         <a href="#publications">
           <i class="fas fa-angle-down"></i>
         </a>
@@ -258,28 +274,28 @@
       <div class="grid-middle">
 
         <div class="col-10">
-          <div class="grid">
-            <div class="col-4_sm-6_xs-12 feature-block centered">
+          <div class="grid-middle">
+            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
               <img class="img-publication centered-container" src="img/programista_3_2017.jpg">
               <a href="https://programistamag.pl/programista-3-2017-58/" target="_blank">
                 <h3>What's new in Android?</h3>
               </a>
               <p>
-                This is the article about the recent changes in Android platform, how it evolved and what the developers might expect in the nearest future. I wrote it for Programista (3/2017) - the most popular polish magazine for programmers, scrum masters and program managers.
+                This is the article about the recent changes in Android platform, how it evolved and what the developers might expect in the nearest future. I wrote it for Programista (3/2017) - the most popular polish magazine for IT specialists.
               </p>
             </div>
 
-            <div class="col-4_sm-6_xs-12 feature-block centered">
+            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
               <img class="img-publication centered-container" src="img/programista_8_2018.jpg">
               <a href="https://programistamag.pl/programista-9-2018-76/" target="_blank">
                 <h3>Clean code in Kotlin on Android</h3>
               </a>
               <p>
-                This is the article about techniques, libraries and best practices in Kotlin which Android developers should use in order to write consice and easy to read code. I wrote it for Programista (9/2018) - the most popular polish magazine for programmers, scrum masters and program managers.
+                This is the article about techniques, libraries and best practices in Kotlin which Android developers should use in order to write consice and easy to read code. I wrote it for Programista (9/2018) - the most popular polish magazine for IT specialists.
               </p>
             </div>
 
-            <div class="col-4_sm-6_xs-12 feature-block centered">
+            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
               <img class="img-publication centered-container" src="img/08_bestfiends_unstuck.png">
               <a href="https://ubm.io/2DbJhVB" target="_blank">
                 <h3>How to create an addictive puzzle game?</h3>
@@ -296,7 +312,7 @@
         </div>
       </div>
 
-      <div class="col-12 centered-text">
+      <div class="col-12-bottom centered-text">
         <a href="#contact-me">
           <i class="fas fa-angle-down"></i>
         </a>
@@ -340,5 +356,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- BODY SCRIPTS -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

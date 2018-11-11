@@ -87,6 +87,10 @@ img {
   position: absolute;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
 .navigate-top {
   right: 0;
   bottom: 0;
@@ -109,7 +113,13 @@ img {
   transform: translateY(-50%); */
 }
 
-.mob-show { display: none;}
+.mobile-show {
+  display: none;
+}
+
+.mobile-hide {
+  display: block;
+}
 
 .bg-img {
   background-color: grey;
@@ -168,12 +178,13 @@ h1 {
   font-size: 2rem;
   line-height: 0.9em;
   color: yellow;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
 h2 {
   color: yellow;
   font-size: 4rem;
+  text-shadow: 2px 2px hotpink;
 }
 
 h3 {
@@ -221,6 +232,115 @@ a:active {
   padding: 0;
 }
 
+
+/* BURGER BUTTTON CSS */
+@media (max-width: 940px) {
+  .mobile-show {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+  .burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 9999999999;
+    padding: 8px;
+  }
+  /*this is where you can chand the color of the buttons*/
+  .burger-button span {
+    width: 40px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    display: block;
+    border-radius: 22px;
+    transition: 1s;
+  }
+  .burger-button.active span {
+    border-color: rgba(26, 188, 156, 1);
+    background-color:rgba(26, 188, 156, 1);
+  }
+
+  .burger-top, .burger-bottom {
+    position: absolute;
+  }
+
+  .burger-top {
+    top: -02px;
+  }
+
+  .burger-bottom {
+    bottom: -02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top {
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+    transition-duration: 1s;
+  }
+
+  .burger-button.active .burger-middle {
+  /*   transform: rotateZ(270deg); */
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+
+  /* make sure this has the same bottom as the burger button has padding*/
+
+  .burger-button.active .burger-bottom {
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+    transition-duration: 1s;
+  }
+
+  .burger-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(249, 249, 249, 0.9);
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 9;
+  }
+
+  .burger-menu-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .burger-menu a {
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(26, 188, 156, 1);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    display:block;
+    text-align:center;
+    white-space:nowrap;
+    text-transform: capitalize;
+  }
+
+  .burger-menu a:hover {
+    color: rgba(142, 68, 173, 1);
+  }
+
+  .burger-menu li {list-style:none}
+}
+/* BURGER BUTTTON CSS */
+
 .fa {
   font-size: 2.5em;
   margin: 0 0 0.5em;
@@ -231,7 +351,7 @@ a:active {
 	width: 150px;
 	height: 150px;
 	box-sizing: border-box;
-	border: 5px white solid;
+	border: 4px white solid;
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
@@ -266,6 +386,27 @@ a:active {
 	padding-left: 35%;
   padding-right: 35%;
 	/* padding: 1rem 2rem; */
+}
+
+@media(max-width: 1024px) {
+  .about-me-content {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-me-content {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media(max-width: 576px) {
+  .about-me-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .about-me-desc {
@@ -316,6 +457,7 @@ nav a {
   background-size: cover;
   background-position: center;
   border: 5px solid hotpink;
+  box-shadow: 0 5px 5px 0px rgba(0,0,0,0.6);
 }
 
 /*------------ TECH --------------------------- */
@@ -332,8 +474,19 @@ nav a {
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 }
 
+.talks-box {
+  padding: 2rem;
+}
+
 .img-talks_work {
   height: 160px;
+  border: 2px solid rgba(142, 68, 173, 1);
+	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
+}
+
+#talks_and_workshops h3 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 /*------------ TALKS & WORKSHOPS --------------------------- */
@@ -341,6 +494,17 @@ nav a {
 	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
+}
+
+#publications h3 {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.publications-box {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .img-publication {
@@ -352,6 +516,10 @@ nav a {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
+}
+
+#contact-me p {
+  padding-bottom: 1rem;
 }
 
 form input,
