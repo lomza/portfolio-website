@@ -45,8 +45,7 @@ img {
 }
 
 .rotated-text-to-left {
-  height: 100%;
-  width: 100%;
+  /* width: 100%; */
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   /* Safari */
@@ -62,8 +61,7 @@ img {
 }
 
 .rotated-text-to-right {
-  height: 100%;
-  width: 100%;
+  /* width: 100%; */
   writing-mode: vertical-lr;
 }
 
@@ -167,7 +165,6 @@ body {
 
 header, section, footer {
   min-height:100vh;
-  padding: 1%;
   outline: none;
 }
 
@@ -191,6 +188,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+.grid, .grid-middle {
+  padding: 2%;
 }
 
 header h2, section h2, footer h2 {
@@ -229,7 +230,6 @@ a:active {
 }
 
 [class*=col-], [class*=col_], [class~=col]  {
-  /* padding: 2%; */
   margin: 0;
   padding: 0;
 }
@@ -481,9 +481,13 @@ nav a {
 }
 
 .img-talks_work {
-  height: 160px;
+  height: 180px;
+  width: 180px;
   border: 2px solid rgba(142, 68, 173, 1);
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #talks_and_workshops h3 {
@@ -505,8 +509,12 @@ nav a {
 }
 
 .publications-box {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 2rem;
+
+}
+
+.publications-box p {
+  text-align: justify;
 }
 
 .img-publication {
@@ -522,6 +530,10 @@ nav a {
 
 #contact-me p {
   padding-bottom: 1rem;
+}
+
+#contact-me > div {
+  min-height: 100vh;
 }
 
 form input,

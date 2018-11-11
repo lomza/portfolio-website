@@ -1,101 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Tonia's Tkachuk Portfolio</title>
+    <head>
+        <title>Tonia's Tkachuk Portfolio</title>
 
-    <!-- meta data to tell the browser that your device is responsive -->
-    <meta charset="utf-8">
-    <meta name=“description” content=“I write Android apps from the scratch using Kotlin and latest technologies, such as Android Architecture Components, MVVM, Koin. I also started my web dev journey...
-    <meta name=“keywords” content=“android development, app development, web dev, frontend dev, html, css, java, kotlin, android,mvvm”>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- meta data to tell the browser that your device is responsive -->
+  <meta charset="utf-8">
+  <meta name=“description” content=“I write Android apps from the scratch using Kotlin and latest technologies, such as Android Architecture Components, MVVM, Koin. I also started my web dev journey...
+  <meta name=“keywords” content=“android development, app development, web dev, frontend dev, html, css, java, kotlin, android,mvvm”>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-    <!-- CSS -->
+  <!-- CSS -->
 
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
-    <!-- Gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <!-- My CSS files -->
-    <link href="main.css" type="text/css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+  <!-- Gridlex -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <!-- My CSS files -->
+  <link href="main.css" type="text/css" rel="stylesheet" />
 
+    </head>
   </head>
   <body>
+
+    <!----------------- ABOUT ME ----------------->
+<header class="grid-middle" id="about-me">
+  <!-- this is the fixed header that stays pinned to the top -->
+  <div class="col-12">
+    <nav class="mobile-hide">
+      <a href="#projects">Projects</a>
+      <h3> | </h3>
+      <a href="#technology">Technology</a>
+      <h3> | </h3>
+      <a href="#talks_and_workshops">Talks & Workshops</a>
+      <h3> | </h3>
+      <a href="#publications">Publications</a>
+      <h3> | </h3>
+      <a href="#contact-me">Contact</a>
+    </nav>
+
+    <nav class="mobile-show">
+      <div class="burger-button">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu-content">
+          <a href="#projects">Projects</a>
+          <a href="#technology">Technology</a>
+          <a href="#talks_and_workshops">Talks & Workshops</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact-me">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="col-12 centered-text">
+    <div class="avatar centered-block">
+      <a href="http://lomza.totem-soft.com/" target="_blank">
+        <img class="profile" src="img/tonia_tkachuk_profile.jpg" alt="Profile picture" />
+      </a>
+    </div>
+    <h1>Tonia Tkachuk</h1>
+    <h4 class="padded-1">Apps & Web Developer</h4>
+    <p class="about-me-content">I use the latest technologies to create mobile apps and websites. I find each project to be unique and enjoy making useful stuff work. Whenever I have some free time, I enjoy reading or playing with my son. </p>
+    <p class="padded-3">
+      <span><a href="mailto:tonia.tkachuk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></span>
+      <span><a href="https://github.com/lomza" target="_blank"><i class="fab fa-github"></i></a></span>
+      <span><a href="https://www.linkedin.com/in/tonia-tkachuk-811a1346/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+      <span><a href="https://medium.com/@tonia.tkachuk" target="_blank"><i class="fab fa-medium"></i></a></span>
+      <span><a href="https://twitter.com/lomza_t" target="_blank"><i class="fab fa-twitter"></i></a></span>
+    </p>
+  </div>
+
+  <div class="col-12-bottom centered-text">
+    <a href="#projects">
+      <i class="fas fa-angle-down"></i>
+    </a>
+  </div>
+</header>
+
 
         <div>
       <a href="#about-me" class="navigate-top fixed"><i class="fas fa-angle-up"></i></a>
     </div>
 
-    <!----------------- ABOUT ME ----------------->
-
-    <header class="grid-middle" id="about-me">
-      <!-- this is the fixed header that stays pinned to the top -->
-      <div class="col-12">
-        <nav class="mobile-hide">
-          <a href="#projects">Projects</a>
-          <h3> | </h3>
-          <a href="#technology">Technology</a>
-          <h3> | </h3>
-          <a href="#talks_and_workshops">Talks & Workshops</a>
-          <h3> | </h3>
-          <a href="#publications">Publications</a>
-          <h3> | </h3>
-          <a href="#contact-me">Contact</a>
-        </nav>
-
-        <nav class="mobile-show">
-          <div class="burger-button">
-            <span class="burger-top"></span>
-            <span class="burger-middle"></span>
-            <span class="burger-bottom"></span>
-          </div>
-          <div class="burger-menu">
-            <div class="burger-menu-content">
-              <a href="#projects">Projects</a>
-              <a href="#technology">Technology</a>
-              <a href="#talks_and_workshops">Talks & Workshops</a>
-              <a href="#publications">Publications</a>
-              <a href="#contact-me">Contact</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <div class="col-12 centered-text">
-        <div class="avatar centered-block">
-          <a href="http://lomza.totem-soft.com/" target="_blank">
-            <img class="profile" src="img/tonia_tkachuk_profile.jpg" alt="Profile picture" />
-          </a>
-        </div>
-        <h1>Tonia Tkachuk</h1>
-        <h4 class="padded-1">Apps & Web Developer</h4>
-        <p class="about-me-content">I use the latest technologies to create mobile apps and websites. I find each project to be unique and enjoy making useful stuff work. Whenever I have some free time, I enjoy reading or playing with my son. </p>
-        <p class="padded-3">
-          <span><a href="mailto:tonia.tkachuk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></span>
-          <span><a href="https://github.com/lomza" target="_blank"><i class="fab fa-github"></i></a></span>
-          <span><a href="https://www.linkedin.com/in/tonia-tkachuk-811a1346/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
-          <span><a href="https://medium.com/@tonia.tkachuk" target="_blank"><i class="fab fa-medium"></i></a></span>
-          <span><a href="https://twitter.com/lomza_t" target="_blank"><i class="fab fa-twitter"></i></a></span>
-        </p>
-      </div>
-
-      <div class="col-12-bottom centered-text">
-        <a href="#projects">
-          <i class="fas fa-angle-down"></i>
-        </a>
-      </div>
-    </header>
-
     <!----------------- PROJECTS ----------------->
     <section id="projects">
       <div class="grid-middle">
 
-        <div class="col-2">
-          <h2 class="rotated-text-to-left">Projects</h2>
+        <div class="col-2 centered-container">
+          <h2 class="rotated-text-to-left centered-text">Projects</h2>
         </div>
 
         <div class="col-10">
@@ -199,8 +201,8 @@
           <h3>Flutter</h3>
         </div>
 
-        <div class="col-2">
-          <h2 class="rotated-text-to-right">Technology</h2>
+        <div class="col-2 centered-container">
+          <h2 class="rotated-text-to-right centered-text">Technology</h2>
         </div>
 
       </div>
@@ -210,14 +212,14 @@
       <div class="grid-middle">
 
         <div class="col-2">
-          <h2 class="rotated-text-to-left">& Talks Workshops</h2>
+          <h2 class="rotated-text-to-left centered-text">& Talks Workshops</h2>
         </div>
 
         <div class="col-10">
           <div class="grid-middle">
             <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/support_library_talk.png" class="centered-container img-talks_work round-img">
+                <div style="background-image: url('img/support_library_talk.png');" class="centered-container img-talks_work round-img"></div>
                 <a href="https://www.youtube.com/watch?v=YkvyBljxEWA" target="_blank">
                   <h3>Android Support Lib</h3>
                 </a>
@@ -229,19 +231,19 @@
 
             <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/vr_sdk.png" class="centered-container img-talks_work round-img">
+                <div style="background-image: url('img/android_n.png');" class="centered-container img-talks_work round-img"></div>
                 <a href="" target="_blank">
                   <h3 onclick="return false;">Android Workshops</h3>
                 </a>
                 <p>
-                  Series of meetings and workshops related to Android, that I had for the employees of <a href="https://www.mobica.com/" target="_blank">Mobica Ltd</a>. These included topics such as greenDAO ORM, Google Play, Android N features, Google VR SDK, highlights of Android courses and video channels.
+                  Series of meetings and workshops related to Android, that I had for the employees of <a href="https://www.mobica.com/" target="_blank">Mobica Ltd</a>. These included topics such as greenDAO ORM, Google Play, Android N, Google VR SDK, highlights of Android courses and video channels.
                 </p>
               </div>
             </div>
 
             <div class="col-4_sm-6_xs-12 talks-box relative centered-text">
               <div>
-                <img src="img/grandle_for_android.png" class="centered-container img-talks_work round-img">
+                <div style="background-image: url('img/gradle_android.jpg');" class="centered-container img-talks_work round-img"></div>
                 <a href="" target="_blank">
                   <h3 onclick="return false;">Gradle in Android</h3>
                 </a>
@@ -256,12 +258,11 @@
     </section>
     <!----------------- PUBLICATIONS ----------------->
     <section id="publications">
-
       <div class="grid-middle">
 
         <div class="col-10">
-          <div class="grid-middle">
-            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
+          <div class="grid-middle left-text">
+            <div class="col-4_sm-6_xs-12 publications-box relative left-text">
               <img class="img-publication centered-container" src="img/programista_3_2017.jpg">
               <a href="https://programistamag.pl/programista-3-2017-58/" target="_blank">
                 <h3>What's new in Android?</h3>
@@ -271,7 +272,7 @@
               </p>
             </div>
 
-            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
+            <div class="col-4_sm-6_xs-12 publications-box relative left-text">
               <img class="img-publication centered-container" src="img/programista_8_2018.jpg">
               <a href="https://programistamag.pl/programista-9-2018-76/" target="_blank">
                 <h3>Clean code in Kotlin on Android</h3>
@@ -281,7 +282,7 @@
               </p>
             </div>
 
-            <div class="col-4_sm-6_xs-12 publication-box relative centered-text">
+            <div class="col-4_sm-6_xs-12 publications-box relative left-text">
               <img class="img-publication centered-container" src="img/08_bestfiends_unstuck.png">
               <a href="https://ubm.io/2DbJhVB" target="_blank">
                 <h3>How to create an addictive puzzle game?</h3>
@@ -293,51 +294,51 @@
           </div>
         </div>
 
-        <div class="col-2">
-          <h2 class="rotated-text-to-right">Publications</h2>
+        <div class="col-2 centered-container">
+          <h2 class="rotated-text-to-right centered-text">Publications</h2>
         </div>
-
       </div>
     </section>
 
 
-    <!----------------- CONTACT ME ----------------->
-    <footer id="contact-me">
+    <!----------------- CONTACT ME & COPYRIGHT ----------------->
+<footer id="contact-me">
+  <div class="grid">
+    <div class="col-2 centered-container">
+      <h2 class="rotated-text-to-left centered-text">Contact</h2>
+    </div>
+
+    <div class="col-10">
       <div class="grid">
-        <div class="col-2">
-          <h2 class="rotated-text-to-left">Contact</h2>
+        <div class="col-6_sm-12 contact-form-box">
+          <h3>Have a question or a job offer?</h3>
+          <p>I always enjoy receiving emails from the real people instead of some ads and newsletters (although <a href="https://android.libhunt.com/newsletter" target="_blank">Awesome Android</a> and <a href="http://www.kotlinweekly.net/" target="_blank">Kotlin Weekly</a> are pretty cool!) So, just fill in the form and send me a message. I will reply to you the same day.</p>
         </div>
 
-        <div class="col-10">
-          <div class="grid">
-            <div class="col-6_sm-12 contact-form-box">
-              <h3>Have a question or a job offer?</h3>
-              <p>I always enjoy receiving emails from the real people instead of some ads and newsletters (although <a href="https://android.libhunt.com/newsletter" target="_blank">Awesome Android</a> and <a href="http://www.kotlinweekly.net/" target="_blank">Kotlin Weekly</a> are pretty cool!) So, just fill in the form and send me a message. I will reply to you the same day.</p>
+        <div class="col-6_sm-12 contact-form-box">
+          <form action="https://formspree.io/your@email.com" method="POST"> <!-- TODO: make the form work! -->
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name">
+            <label for="mail">Your Email</label>
+            <input id="mail" type="email" name="_replyto">
+            <label for="mail-content">Message</label>
+            <textarea id="mail-content" class="notes" name="message"></textarea>
+            <div class="flex-right">
+              <div class="button">
+                <input type="submit" value=" Send ">
+              </div>
             </div>
-
-            <div class="col-6_sm-12 contact-form-box">
-              <form action="https://formspree.io/your@email.com" method="POST"> <!-- TODO: make the form work! -->
-                <label for="name">Your Name</label>
-                <input id="name" type="text" name="name">
-                <label for="mail">Your Email</label>
-                <input id="mail" type="email" name="_replyto">
-                <label for="mail-content">Message</label>
-                <textarea id="mail-content" class="notes" name="message"></textarea>
-                <div class="flex-right">
-                  <div class="button">
-                    <input type="submit" value=" Send ">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 centered-text">
-          <p>Copyright @ Tonia Tkachuk, 2018</p>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <div class="col-12-bottom centered-text">
+      <p>Copyright @ Tonia Tkachuk, 2018</p>
+    </div>
+  </div>
+</footer>
+
 
     <!-- BODY SCRIPTS -->
     <script src="scripts/jquery.js"></script>

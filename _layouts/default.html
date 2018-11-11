@@ -1,70 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Tonia's Tkachuk Portfolio</title>
-
-    <!-- meta data to tell the browser that your device is responsive -->
-    <meta charset="utf-8">
-    <meta name=“description” content=“I write Android apps from the scratch using Kotlin and latest technologies, such as Android Architecture Components, MVVM, Koin. I also started my web dev journey...
-    <meta name=“keywords” content=“android development, app development, web dev, frontend dev, html, css, java, kotlin, android,mvvm”>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-    <!-- CSS -->
-
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
-    <!-- Gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <!-- My CSS files -->
-    <link href="main.css" type="text/css" rel="stylesheet" />
-
+    <head>
+      {% include head.html %}
+    </head>
   </head>
   <body>
 
+    {% include header.html %}
+
     {{ content }}
 
-    <!----------------- CONTACT ME ----------------->
-    <footer id="contact-me">
-      <div class="grid">
-        <div class="col-2">
-          <h2 class="rotated-text-to-left">Contact</h2>
-        </div>
-
-        <div class="col-10">
-          <div class="grid">
-            <div class="col-6_sm-12 contact-form-box">
-              <h3>Have a question or a job offer?</h3>
-              <p>I always enjoy receiving emails from the real people instead of some ads and newsletters (although <a href="https://android.libhunt.com/newsletter" target="_blank">Awesome Android</a> and <a href="http://www.kotlinweekly.net/" target="_blank">Kotlin Weekly</a> are pretty cool!) So, just fill in the form and send me a message. I will reply to you the same day.</p>
-            </div>
-
-            <div class="col-6_sm-12 contact-form-box">
-              <form action="https://formspree.io/your@email.com" method="POST"> <!-- TODO: make the form work! -->
-                <label for="name">Your Name</label>
-                <input id="name" type="text" name="name">
-                <label for="mail">Your Email</label>
-                <input id="mail" type="email" name="_replyto">
-                <label for="mail-content">Message</label>
-                <textarea id="mail-content" class="notes" name="message"></textarea>
-                <div class="flex-right">
-                  <div class="button">
-                    <input type="submit" value=" Send ">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 centered-text">
-          <p>Copyright @ Tonia Tkachuk, 2018</p>
-        </div>
-      </div>
-    </footer>
+    {% include footer.html %}
 
     <!-- BODY SCRIPTS -->
     <script src="scripts/jquery.js"></script>
