@@ -614,12 +614,22 @@ form textarea {
 /* bubbles! */
 .tech-box {
   padding: 1rem;
-  min-height: 200px;
+  min-height: 190px;
+}
+
+.tech-box-big {
+  padding: 1.5rem;
+  min-height: 220px;
+}
+
+.tech-box-small {
+  padding: 0.2rem;
+  min-height: 150px;
 }
 
 .tech-box-img {
-  max-height: 115px;
-  max-width: 115px;
+  max-height: 125px;
+  max-width: 125px;
 }
 
 .tech-box-img-big {
@@ -628,13 +638,13 @@ form textarea {
 }
 
 .tech-box-img-small {
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .sphere {
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
   background: rgba(187, 222, 251, .3);
   border-radius: 50%;
   position: absolute;
@@ -688,8 +698,8 @@ form textarea {
 }
 
 .sphere-small {
-  height: 110px;
-  width: 110px;
+  height: 125px;
+  width: 125px;
 }
 
 @media(max-width: 1024px) {
