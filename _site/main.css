@@ -22,6 +22,15 @@ Website Colours: #26de81 (default bg color),
   /* border: 1px solid green; */
 }
 
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+
+[class*=col-], [class*=col_], [class~=col]  {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -122,10 +131,25 @@ img {
   right: 0;
   bottom: 0;
   padding: 1%;
-  margin: 1%;
+  margin: 3%;
   background-color: yellow;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
+  border: 2px solid hotpink;
+  color: hotpink;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
   z-index: 9;
+}
+
+.navigate-top:hover {
+  color: #26de81;
+}
+
+.navigate-down {
+  font-size: 1.4rem;
 }
 
 nav {
@@ -159,6 +183,11 @@ nav h3 {
 header, section, footer {
   min-height:100vh;
   outline: none;
+}
+
+header {
+  position: relative;
+  z-index: 10;
 }
 
 h1, h2, h3, h4 {
@@ -223,15 +252,6 @@ a:hover {
 a:active {
     color: hotpink;
 }
-[class*=grid-], [class*=grid_], [class~=grid] {
-  margin: 0;
-}
-
-[class*=col-], [class*=col_], [class~=col]  {
-  margin: 0;
-  padding: 0;
-}
-
 
 /* BURGER BUTTTON CSS */
 @media (max-width: 940px) {
@@ -241,6 +261,10 @@ a:active {
 
   .mobile-hide {
     display: none;
+  }
+
+  .navigate-top {
+    left: 0;
   }
 
   /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
