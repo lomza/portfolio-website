@@ -102,6 +102,14 @@ $(document).ready(
                 $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
               };
+
+              // console.log(event.target.hash);
+              // if (startFromLeft) {
+              //   $(event.target.hash + "-insides").addClass("animated " + fadeLeft + " slow");
+              // } else {
+              //   $(event.target.hash + "-insides").addClass("animated " + fadeRight + " slow");
+              // }
+              // startFromLeft = !startFromLeft;
             });
           }
         }
