@@ -2,12 +2,20 @@ $(document).ready(
   function() {
     // custom variablees, functions
     var scrollTime = 1000;
+    var startFromLeft = true;
+    var fadeLeft = "fadeInLeft";
+    var fadeRight = "fadeInRight";
 
     function scrollToTop(id) {
       $([document.documentElement, document.body]).animate({
               scrollTop: $(id).offset().top
-          }, scrollTime);
-       //console.log("on " + id);
+          }, scrollTime)
+      if (startFromLeft) {
+        $(id + "-insides").addClass("animated " + fadeLeft + " slow");
+      } else {
+        $(id + "-insides").addClass("animated " + fadeRight + " slow");
+      }
+      startFromLeft = !startFromLeft;
     }
 
     // menu functionality

@@ -412,27 +412,6 @@ a:active {
 	/* padding: 1rem 2rem; */
 }
 
-@media(max-width: 1024px) {
-  .about-me-content {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-}
-
-@media(max-width: 768px) {
-  .about-me-content {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-
-@media(max-width: 576px) {
-  .about-me-content {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
 /*------------ PROJECTS --------------------------- */
 #projects {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
@@ -623,37 +602,47 @@ form textarea {
     line-height: 31px;
 }
 
-
-/* FADE IN DOWN */
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+@media(max-width: 1024px) {
+  .about-me-content {
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+@media(max-width: 768px) {
+  .about-me-content {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  .project-box {
+    padding: 1rem;
+  }
+
+  .talks-box {
+    padding: 1rem;
+  }
+
+  .publications-box {
+    padding: 1rem;
   }
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+@media(max-width: 576px) {
+  .about-me-content {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .project-box {
+    padding: 0.8rem;
+  }
+
+  .talks-box {
+    padding: 0.8rem;
+  }
+
+  .publications-box {
+    padding: 0.8rem;
+  }
 }
