@@ -111,6 +111,15 @@ img {
   flex-direction: column;
 }
 
+.to-right-container {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-show {
   display: none;
 }
@@ -600,6 +609,87 @@ form textarea {
     background-image:
     repeating-linear-gradient(transparent, transparent 30px, yellow 30px, yellow 31px, transparent 31px);
     line-height: 31px;
+}
+
+/* bubbles! */
+.tech-box {
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.tech-box-img {
+  max-height: 115px;
+  max-width: 115px;
+}
+
+.tech-box-img-big {
+  max-height: 140px;
+  max-width: 140px;
+}
+
+.tech-box-img-small {
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.sphere {
+  height: 130px;
+  width: 130px;
+  background: rgba(187, 222, 251, .3);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 1px 2px 3px inset #E3F2FD, -1px -2px 3px inset #E3F2FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-name: fly;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  z-index: 8;
+  color: #FFF;
+}
+
+.sphere:before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 78%, white 84%, white 84%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  left: 4%;
+  top: 2%;
+  height: 100%;
+  width: 90%;
+  opacity: .6;
+  filter: blur(0);
+  z-index: 2;
+  -webkit-transform: rotateY(10deg) rotateZ(-25deg);
+}
+
+.sphere:after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 77%, white 85%, white 84%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  left: 4%;
+  top: 2%;
+  height: 100%;
+  width: 90%;
+  opacity: .6;
+  filter: blur(0);
+  z-index: 2;
+  transform: translateX(3%) translateY(-3%) rotateZ(168deg) rotateX(10deg);
+}
+
+.sphere-big {
+  height: 180px;
+  width: 180px;
+}
+
+.sphere-small {
+  height: 110px;
+  width: 110px;
 }
 
 @media(max-width: 1024px) {
