@@ -745,4 +745,50 @@ form textarea {
   .publications-box {
     padding: 0.8rem;
   }
+
+  /* SPHERE */
+  .tech-box {
+  padding: 0.7rem;
+  min-height: 160px;
+}
+
+.tech-box-big {
+  padding: 1.2rem;
+  min-height: 190px;
+}
+
+.tech-box-small {
+  padding: 0.2rem;
+  min-height: 140px;
+}
+
+.tech-box-img {
+  max-height: 115px;
+  max-width: 115px;
+}
+
+.tech-box-img-big {
+  max-height: 130px;
+  max-width: 130px;
+}
+
+.tech-box-img-small {
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.sphere {
+  height: 135px;
+  width: 135px;
+}
+
+.sphere-big {
+  height: 150px;
+  width: 150px;
+}
+
+.sphere-small {
+  height: 115px;
+  width: 115px;
+}
 }
