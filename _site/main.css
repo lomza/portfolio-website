@@ -209,6 +209,7 @@ h1 {
   line-height: 0.9em;
   color: yellow;
   margin: 1rem 0 0.5rem 0;
+  text-shadow: 1px 1px hotpink;
 }
 
 h2 {
