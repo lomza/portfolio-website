@@ -235,7 +235,7 @@ header h2, section h2, footer h2 {
 }
 
 header span a {
-  color: #fc5c65;
+  color: #hotpink;
   text-decoration: none;
 	font-size: 18px;
 	margin: 0 10px;
@@ -244,7 +244,7 @@ header span a {
 
 /* unvisited link */
 a:link {
-    color: #fc5c65;
+    color: hotpink;
 }
 
 /* visited link */
