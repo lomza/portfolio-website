@@ -476,7 +476,7 @@ nav a {
 	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
 }
 
-/*------------ PUBLICATIONS --------------------------- */
+/*------------ TALKS & WORKSHOPS --------------------------- */
 #talks_and_workshops {
 	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
@@ -490,7 +490,7 @@ nav a {
 .img-talks_work {
   height: 180px;
   width: 180px;
-  border: 2px solid rgba(26, 188, 156, 1);
+  border: 2px solid hotpink;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
   background-size: cover;
   background-position: center;
@@ -502,7 +502,7 @@ nav a {
   padding-bottom: 0.5rem;
 }
 
-/*------------ TALKS & WORKSHOPS --------------------------- */
+/*------------ PUBLICATIONS --------------------------- */
 #publications {
 	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
