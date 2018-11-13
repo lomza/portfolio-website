@@ -11,26 +11,32 @@ projects:
     desc: Simple, yet elegant app for counting how many times the screen was turned on or unlocked. The user can see numbers in the custom calendar or pause and resume the counting.
     img: look_counter_project.png
     url: https://play.google.com/store/apps/details?id=com.totemsoft.screenlookcount
+    type: android
   - title: movies-room
     desc: Example Android application with the list of movies and directors. I make use of Room persistant storage and ViewModel with LiveData from Android Architecture Components.
     img: room_db_project.png
     url: https://github.com/lomza/movies-room
+    type: android
   - title: WiFi & Mobile Data Switch
     desc: Simple toggle widget for turning WiFi and Mobile Data ON/OFF.
     img: wifi_and_md_widget.png
     url: https://play.google.com/store/apps/details?id=com.totemsoft.wifimd
+    type: android
   - title: AppBar scrollFlags
     desc: With the appearance of AppBarLayout and app:layout_scrollFlags, Android devs can customize how the AppBar behaves when you scroll the content. Just a few values can create a totally different effect.
     img: scroll_flags_project.png
     url: https://github.com/lomza/AppBar-ScrollFlags-Example"
+    type: android
   - title: Tonia's Tkachuk Portfolio
     desc: This is the current website that you're on ;) I built it myself from the ground up, using HTML, CSS, JavaScript and Jekyll.
     img: portfolio_project.png
     url: https://github.com/lomza/portfolio-website
+    type: web
   - title: IOC Mattress
     desc: The first website that I built to teach myself HTML and CSS. Uses sections with different building blocks and styling. Optimized for mobile devices.
     img: ioc_mattress_website.png
     url: https://hopeful-almeida-aef297.netlify.com/
+    type: web
 
 talks_workshops:
   - title: Android Support Lib
@@ -77,19 +83,21 @@ publications:
 
         <div class="col-10">
           <div class="grid">
-            {% for projects in page.projects %}
-            <div class="col-4_sm-6_xs-12 project-box relative">
-              <div class="project-box-bg" style="background-image:url(img/{{projects.img}});">
-                <div class="project-overlay padded-3">
-                  <a href="{{projects.url}}" target="_blank">
-                    <h3>{{projects.title}}</h3>
-                  </a>
-                  <p>
-                    {{projects.desc}}
-                  </p>
+            {% for project in page.projects %}
+              {% if project.type == "android" or project.type == "web"  %}
+                <div class="col-4_sm-6_xs-12 project-box relative">
+                  <div class="project-box-bg" style="background-image:url(img/{{project.img}});">
+                    <div class="project-overlay padded-3">
+                      <a href="{{project.url}}" target="_blank">
+                        <h3>{{project.title}}</h3>
+                      </a>
+                      <p>
+                        {{project.desc}}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
