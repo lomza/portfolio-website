@@ -534,7 +534,9 @@ nav a {
 }
 
 #contact-me p {
+  padding-right: 1rem;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 #contact-me > div {
@@ -658,6 +660,7 @@ form textarea {
   animation-name: fly;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+  transition: 1s;
   z-index: 8;
   color: #FFF;
 }
@@ -692,9 +695,17 @@ form textarea {
   transform: translateX(3%) translateY(-3%) rotateZ(168deg) rotateX(10deg);
 }
 
+.sphere:hover {
+  padding: 7%;
+}
+
 .sphere-big {
   height: 180px;
   width: 180px;
+}
+
+.sphere-big:hover {
+  padding: 10%;
 }
 
 .sphere-small {
@@ -725,6 +736,10 @@ form textarea {
 
   .publications-box {
     padding: 1rem;
+  }
+
+  #contact-me p {
+    padding-right: 0rem;
   }
 }
 
