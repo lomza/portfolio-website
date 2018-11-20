@@ -102,6 +102,37 @@ img {
   border-radius: 50%;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.green {
+  background-color: green;
+  width: 20px;
+  height: 20px
+}
+
+.yellow {
+  background-color: yellow;
+  width: 20px;
+  height: 20px
+}
+
+.red {
+  background-color: red;
+  width: 20px;
+  height: 20px
+}
+
+.blue {
+  background-color: blue;
+  width: 20px;
+  height: 20px
+}
+
 .centered-container {
   margin-left: auto;
   margin-right: auto;
@@ -171,6 +202,7 @@ nav a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.4rem;
+  display: inline-block;
 }
 
 nav h3 {
@@ -261,6 +293,31 @@ a:hover {
 /* selected link */
 a:active {
     color: hotpink;
+}
+
+@keyframes bubble-one {
+  0% { top: 0%; right: 0%; }
+  25% { top: -7%; }
+  50% { right: 15%; }
+  75% { top: 10%; right: 10%; }
+  100% { top: 0%; right: 0%; }
+}
+
+@keyframes bubble-two {
+  0% { top: -5%; right: -3%; }
+  25% { top: 0%; }
+  50% { right: 15%; }
+  75% { top: 10%; right: 10%; }
+  100% { top: 0%; right: 0%; }
+}
+
+@keyframes bubble-three {
+
+  0% { top: 0%; right: 0%; }
+  25% { top: -7%; }
+  50% { right: 15%; }
+  75% { top: 10%; right: 10%; }
+  100% { top: 0%; right: 0%; }
 }
 
 /* BURGER BUTTTON CSS */
@@ -618,16 +675,21 @@ form textarea {
 .tech-box {
   padding: 1rem;
   min-height: 190px;
+  position: relative;
 }
 
 .tech-box-big {
   padding: 1.5rem;
   min-height: 220px;
+  position: relative;
+
 }
 
 .tech-box-small {
   padding: 0.2rem;
   min-height: 150px;
+  position: relative;
+
 }
 
 .tech-box-img {
@@ -651,6 +713,7 @@ form textarea {
   background: rgba(187, 222, 251, .3);
   border-radius: 50%;
   position: absolute;
+  top:0;
   box-shadow: 1px 2px 3px inset #E3F2FD, -1px -2px 3px inset #E3F2FD;
   display: flex;
   align-items: center;
@@ -658,9 +721,7 @@ form textarea {
   font-size: 2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation-name: fly;
-  animation-duration: 8s;
-  animation-fill-mode: forwards;
+  animation: brucesbubbles 3s infinite alternate;
   transition: 1s;
   z-index: 8;
   color: #FFF;
@@ -703,6 +764,7 @@ form textarea {
 .sphere-big {
   height: 180px;
   width: 180px;
+  animation-duration: 4s;
 }
 
 .sphere-big:hover {
@@ -712,6 +774,7 @@ form textarea {
 .sphere-small {
   height: 125px;
   width: 125px;
+  animation-duration: 2s;
 }
 
 @media(max-width: 1024px) {
