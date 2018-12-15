@@ -638,7 +638,6 @@ form textarea {
   font-size: 2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: brucesbubbles 3s infinite alternate;
   transition: 1s;
   z-index: 8;
   color: #FFF;
@@ -674,25 +673,30 @@ form textarea {
   transform: translateX(3%) translateY(-3%) rotateZ(168deg) rotateX(10deg);
 }
 
-.sphere:hover {
+/* .sphere:hover {
   padding: 7%;
-}
+  animation: bubble-two 2.5s infinite alternate;
+} */
 
 .sphere-big {
   height: 180px;
   width: 180px;
-  animation-duration: 4s;
 }
 
-.sphere-big:hover {
+/* .sphere-big:hover {
   padding: 10%;
-}
+  animation: bubble-three 3.5s infinite alternate;
+} */
 
 .sphere-small {
   height: 125px;
   width: 125px;
-  animation-duration: 2s;
 }
+
+/* .sphere-small:hover {
+  padding: 5%;
+  animation: bubble-two 2s infinite alternate;
+} */
 
 @media(max-width: 1024px) {
   .about-me-content {
