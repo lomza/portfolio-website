@@ -10,7 +10,7 @@
     - Page Name
 ---------------------------
 Website Fonts: Montserrat:400,500,600,700,900
-Website Colours: #26de81 (default bg color),
+Website Colours: white (background), #0A100D (text and visited links), hotpink (borders and links), grey (bg and hover links)
 ----------------------------
 */
 
@@ -35,8 +35,8 @@ html {
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
   background-size: cover;
-  background: rgb(26, 188, 156);
-  color: white;
+  background: white;
+  color: #0A100D;
   font-weight: 500;
 }
 
@@ -109,30 +109,6 @@ img {
   align-items: center;
 }
 
-.green {
-  background-color: green;
-  width: 20px;
-  height: 20px
-}
-
-.yellow {
-  background-color: yellow;
-  width: 20px;
-  height: 20px
-}
-
-.red {
-  background-color: red;
-  width: 20px;
-  height: 20px
-}
-
-.blue {
-  background-color: blue;
-  width: 20px;
-  height: 20px
-}
-
 .centered-container {
   margin-left: auto;
   margin-right: auto;
@@ -172,12 +148,10 @@ img {
   bottom: 0;
   padding: 1%;
   margin: 3% 3% 5% 3%;
-  background-color: yellow;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  border: 2px solid hotpink;
-  color: hotpink;
+  border: 2px solid #0A100D;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
@@ -185,7 +159,7 @@ img {
 }
 
 .navigate-top:hover {
-  color: #26de81;
+  color: grey;
 }
 
 .navigate-down {
@@ -207,18 +181,6 @@ nav a {
 
 nav h3 {
   display: inline;
-  color: yellow;
-}
-
-.bg-featured {
-  background-color: #26de81;
-  color: white;
-}
-
-.featured h1,
-.featured h2,
-.featured h3 {
-  color: white;
 }
 
 header, section, footer {
@@ -229,6 +191,7 @@ header, section, footer {
 header {
   position: relative;
   z-index: 10;
+  background: white;
 }
 
 h1, h2, h3, h4 {
@@ -239,13 +202,10 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2rem;
   line-height: 0.9em;
-  color: yellow;
   margin: 1rem 0 0.5rem 0;
-  text-shadow: 1px 1px hotpink;
 }
 
 h2 {
-  color: yellow;
   font-size: 4rem;
   text-shadow: 2px 2px hotpink;
 }
@@ -282,17 +242,17 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: hotpink;
+    color: #0A100D;
 }
 
 /* mouse over link */
 a:hover {
-    color: yellow;
+    color: grey;
 }
 
 /* selected link */
 a:active {
-    color: hotpink;
+    color: #0A100D;
 }
 
 @keyframes bubble-one {
@@ -345,15 +305,15 @@ a:active {
   /*this is where you can chand the color of the buttons*/
   .burger-button span {
     width: 40px;
-    border: 2px solid yellow;
-    background-color: yellow;
+    border: 2px solid #0A100D;
+    background-color: #0A100D;
     display: block;
     border-radius: 22px;
     transition: 1s;
   }
   .burger-button.active span {
-    border-color: rgba(26, 188, 156, 1);
-    background-color:rgba(26, 188, 156, 1);
+    border-color: #0A100D;
+    background-color:#0A100D;
   }
 
   .burger-top, .burger-bottom {
@@ -416,8 +376,7 @@ a:active {
     padding: 1.5rem 1rem;
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgba(26, 188, 156, 1);
-    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #0A100D;
     display:block;
     text-align:center;
     white-space:nowrap;
@@ -425,7 +384,7 @@ a:active {
   }
 
   .burger-menu a:hover {
-    color: rgba(142, 68, 173, 1);
+    color: grey;
   }
 
   .burger-menu li {list-style:none}
@@ -439,10 +398,9 @@ a:active {
 }
 
 .avatar {
-	width: 150px;
-	height: 150px;
+	width: 165px;
+	height: 165px;
 	box-sizing: border-box;
-	border: 4px white solid;
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
@@ -467,29 +425,12 @@ a:active {
 }
 
 /*------------ ABOUT ME --------------------------- */
-#about-me {
-	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
-}
-
 .about-me-content {
 	padding-left: 35%;
   padding-right: 35%;
-	/* padding: 1rem 2rem; */
 }
 
 /*------------ PROJECTS --------------------------- */
-#projects {
-	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-}
-
-#projects a {
-  color: yellow;
-}
-
 #projects p {
   font-weight: 600;
 }
@@ -509,7 +450,7 @@ nav a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.85);
+  background-color: rgba(160, 160, 160, 0.75);
   transition: all 0.5s;
 }
 
@@ -522,24 +463,13 @@ nav a {
   min-height: 240px;
   background-size: cover;
   background-position: center;
-  border: 5px solid hotpink;
+  border: 1px solid grey;
   box-shadow: 0 5px 5px 0px rgba(0,0,0,0.6);
 }
 
 /*------------ TECH --------------------------- */
-#technology {
-	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
-}
 
 /*------------ TALKS & WORKSHOPS --------------------------- */
-#talks_and_workshops {
-	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-}
-
 .talks-box {
   padding: 2rem;
 }
@@ -547,7 +477,6 @@ nav a {
 .img-talks_work {
   height: 180px;
   width: 180px;
-  border: 2px solid hotpink;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
   background-size: cover;
   background-position: center;
@@ -560,12 +489,6 @@ nav a {
 }
 
 /*------------ PUBLICATIONS --------------------------- */
-#publications {
-	background: -moz-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: linear-gradient(180deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); /* check if works */
-}
-
 #publications h3 {
   font-size: 1.3rem;
   padding-top: 1rem;
@@ -585,12 +508,6 @@ nav a {
 }
 
 /*------------ CONTACT ME --------------------------- */
-#contact-me {
-	background: -moz-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-	background: linear-gradient(180deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1) 100%);
-}
-
 .contact-text p {
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -614,12 +531,12 @@ form textarea {
   outline-style: none;
   background-color: transparent;
 
-  color: yellow;
+  color: #0A100D;
   outline-style: none;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid yellow 1px;
+  border-bottom: solid #0A100D 1px;
   padding: 3px 10px;
 }
 
@@ -652,14 +569,14 @@ form textarea {
 
 .button {
   border: none;
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #0A100D;
   padding-bottom: 4px;
   display: inline-block;
 }
 
 .button:after {
   content: '';
-  border-top: 2px solid yellow;
+  border-top: 2px solid #0A100D;
   display: block;
   width: 100%;
 }
@@ -667,7 +584,7 @@ form textarea {
 .form-message {
     background-attachment: local;
     background-image:
-    repeating-linear-gradient(transparent, transparent 30px, yellow 30px, yellow 31px, transparent 31px);
+    repeating-linear-gradient(transparent, transparent 30px, #0A100D 30px, #0A100D 31px, transparent 31px);
     line-height: 31px;
 }
 
@@ -827,47 +744,47 @@ form textarea {
 
   /* SPHERE */
   .tech-box {
-  padding: 0.7rem;
-  min-height: 160px;
-}
+    padding: 0.7rem;
+    min-height: 160px;
+  }
 
-.tech-box-big {
-  padding: 1.2rem;
-  min-height: 190px;
-}
+  .tech-box-big {
+    padding: 1.2rem;
+    min-height: 190px;
+  }
 
-.tech-box-small {
-  padding: 0.2rem;
-  min-height: 140px;
-}
+  .tech-box-small {
+    padding: 0.2rem;
+    min-height: 140px;
+  }
 
-.tech-box-img {
-  max-height: 115px;
-  max-width: 115px;
-}
+  .tech-box-img {
+    max-height: 115px;
+    max-width: 115px;
+  }
 
-.tech-box-img-big {
-  max-height: 130px;
-  max-width: 130px;
-}
+  .tech-box-img-big {
+    max-height: 130px;
+    max-width: 130px;
+  }
 
-.tech-box-img-small {
-  max-height: 90px;
-  max-width: 90px;
-}
+  .tech-box-img-small {
+    max-height: 90px;
+    max-width: 90px;
+  }
 
-.sphere {
-  height: 135px;
-  width: 135px;
-}
+  .sphere {
+    height: 135px;
+    width: 135px;
+  }
 
-.sphere-big {
-  height: 150px;
-  width: 150px;
-}
+  .sphere-big {
+    height: 150px;
+    width: 150px;
+  }
 
-.sphere-small {
-  height: 115px;
-  width: 115px;
-}
+  .sphere-small {
+    height: 115px;
+    width: 115px;
+  }
 }
