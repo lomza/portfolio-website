@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://zealous-blackwell-278b05.netlify.com/* http://portfolio.totem-soft.com/:splat 301!
