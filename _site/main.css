@@ -548,6 +548,11 @@ label {
   border: none;
   font-size: 1.4rem;
   font-weight: 600;
+  color: hotpink;
+}
+
+[type="submit"]:hover {
+  color: grey;
 }
 
 form textarea {
